@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        background: "bannerImg(url)",
         foreground: "var(--foreground)",
       },
     },
