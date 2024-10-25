@@ -1,10 +1,10 @@
 'use client'
 
 import Image from 'next/image'
-import Profile from "../public/background.jpg"
+
 import Typewriter from 'typewriter-effect';
-import Contact from '../app/contact/page'
 import Portfolio from './portfolio/page';
+import Contact from '../app/contact/page'
 import About from './about/page';
 import Skills from './skills/page';
 import Link from 'next/link'
@@ -18,7 +18,7 @@ const Hero = () => {
     AOS.init({duration:2000});
   },[]);
   return (
-    <div className="bg-[url('../public/paper-5985445_1280 (1).jpg')] bg-no-repeat bg-cover">
+    <div>
 
     
       <section className="text-gray-600 body-font ">
@@ -57,12 +57,12 @@ const Hero = () => {
       </div>
     </div>
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <Image 
-        className="object-cover object-center rounded mx-auto w-[30rem] flip-right" data-aos="fade-up-left" 
+      <Image className="object-cover object-center rounded mx-auto w-[30rem] flip-right" data-aos="fade-up-left" 
+        
         alt="hero"
         width={500}
         height={500}
-        src={Profile}
+        src={"/background.jpg"}
       />
     </div>
   </div>
